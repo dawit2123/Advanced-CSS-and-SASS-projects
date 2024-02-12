@@ -56,7 +56,7 @@ body {
   letter-spacing: 30px;
   font-size: 60px;
   animation-name: moveInFromLeft;
-  animation-duration: 5s;
+  animation-duration: 2s;
 }
 .header-text-sub {
   text-transform: uppercase;
@@ -64,7 +64,7 @@ body {
   font-size: 40%;
   letter-spacing: 20px;
   animation-name: moveInFromRight;
-  animation-duration: 5s;
+  animation-duration: 2s;
 }
 @keyframes moveInFromLeft {
   0% {
@@ -92,18 +92,63 @@ body {
     transform: translate(0px);
   }
 }
+@keyframes moveInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
 .btn:link,
 .btn:visited {
   text-decoration: none;
-  border-radius: 35px;
+  border-radius: 100px;
   text-align: center;
   text-transform: uppercase;
   position: absolute;
   top: 60%;
   left: 40%;
+  transition: all 0.7s;
 }
 .btn-white {
   background-color: white;
   color: grey;
   padding: 15px;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+/* doing the button animations */
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 100px;
+  z-index: -1;
+  transition: all 0.5s;
+}
+.btn-white::after {
+  background-color: white;
+  color: grey;
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+/* button slide in from bottom animation */
+.btn-animated {
+  animation: moveInFromBottom 0.5s ease-out 0.75;
+  animation-fill-mode: backwards;
 }
