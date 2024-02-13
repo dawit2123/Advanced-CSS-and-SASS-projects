@@ -14,9 +14,11 @@ Dark green: #28b485
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
 }
+
 body {
   padding: 2rem;
   font-family: "Lato", sans-serif;
@@ -25,10 +27,11 @@ body {
   font-weight: 400;
   line-height: 1.7;
 }
+
 .header {
   background-image: linear-gradient(
       to right bottom,
-      rgba(126, 213, 111, 0.8),
+      rgba(85, 197, 122, 0.8),
       rgba(40, 180, 133, 0.8)
     ),
     url("../img/hero.jpg");
@@ -39,14 +42,17 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   position: relative;
 }
+
 .header__logo-box {
   position: absolute;
   top: 0;
   bottom: 0;
 }
+
 .header__logo {
   height: 4rem;
 }
+
 .header-text {
   color: white;
   position: absolute;
@@ -55,6 +61,7 @@ body {
   transform: translate(-50%, -50%);
   font-weight: bold;
 }
+
 .header-text--main {
   text-transform: uppercase;
   display: block;
@@ -63,6 +70,7 @@ body {
   animation-name: moveInFromLeft;
   animation-duration: 2s;
 }
+
 .header-text--sub {
   text-transform: uppercase;
   display: block;
@@ -71,6 +79,7 @@ body {
   animation-name: moveInFromRight;
   animation-duration: 2s;
 }
+
 @keyframes moveInFromLeft {
   0% {
     opacity: 0;
@@ -116,19 +125,23 @@ body {
   left: 40%;
   transition: all 0.7s;
 }
+
 .btn--white {
   background-color: white;
   color: grey;
   padding: 1.5rem;
 }
+
 .btn:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
+
 .btn:active {
   transform: translateY(-0.1rem);
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 }
+
 /* doing the button animations */
 .btn::after {
   content: "";
@@ -142,10 +155,12 @@ body {
   z-index: -1;
   transition: all 0.5s;
 }
+
 .btn--white::after {
   background-color: white;
   color: grey;
 }
+
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
@@ -154,5 +169,8 @@ body {
 /* button slide in from bottom animation */
 .btn--animated {
   animation: moveInFromBottom 0.5s ease-out 0.75;
+  animation-delay: 1s;
   animation-fill-mode: backwards;
 }
+
+/*# sourceMappingURL=style.css.map */
