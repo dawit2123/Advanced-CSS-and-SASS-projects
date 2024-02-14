@@ -53,3 +53,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
     } //1800
   }
 }
+@mixin image-hover {
+  z-index: 10;
+  transform: scale(1.1);
+  transform: translateY(-1rem);
+  outline: 1rem solid $color-primary-light;
+}

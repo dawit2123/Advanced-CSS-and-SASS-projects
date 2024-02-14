@@ -3,6 +3,8 @@
   &__images {
     width: 30rem;
     border-radius: 1rem;
+    outline-offset: 2rem;
+    transition: all 0.5s;
   }
   &__images-p1 {
     position: absolute;
@@ -18,5 +20,26 @@
     position: absolute;
     top: 15rem;
     left: 10rem;
+  }
+  &__images-p1:hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include image-hover;
+  }
+  &__images-p2:hover {
+    position: absolute;
+    top: 5rem;
+    left: 20rem;
+    @include image-hover;
+  }
+  &__images-p3:hover {
+    position: absolute;
+    top: 15rem;
+    left: 10rem;
+    @include image-hover;
+  }
+  &:hover &__images:not(:hover) {
+    transform: scale(0.9);
   }
 }
