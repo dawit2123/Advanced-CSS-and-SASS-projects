@@ -41,6 +41,10 @@ body {
   text-align: center;
 }
 
+.u-margin-buttom-8 {
+  margin-bottom: 8rem;
+}
+
 .heading-secondary {
   background-image: linear-gradient(to right, #45e960, #28b485);
   display: inline-block;
