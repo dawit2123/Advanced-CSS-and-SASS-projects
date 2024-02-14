@@ -48,4 +48,19 @@
     animation-delay: 1s;
     animation-fill-mode: backwards;
   }
+  &-learn-more {
+    text-decoration: none;
+    font-size: 2.2rem;
+    display: inline-block;
+    transition: all 0.5s;
+    color: $color-primary-light;
+    border-bottom: 0.1rem solid $color-primary-light;
+    &:hover {
+      transform: translateY(-0.5rem);
+      padding: 0.2rem;
+      color: white;
+      box-shadow: 0.5rem 0.5rem 0.9rem $color-black;
+      background-color: rgba($color-primary-light, 0.8);
+    }
+  }
 }

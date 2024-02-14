@@ -60,7 +60,7 @@ body {
   color: transparent;
   font-size: 3.5rem;
   font-weight: 700;
-  transition: all 2s;
+  transition: all 1s;
 }
 .heading-secondary:hover {
   transform: skewX(20deg) skewY(2deg) scale(1.1);
@@ -120,7 +120,7 @@ body {
   color: transparent;
   font-size: 3.5rem;
   font-weight: 700;
-  transition: all 2s;
+  transition: all 1s;
 }
 .heading-secondary:hover {
   transform: skewX(20deg) skewY(2deg) scale(1.1);
@@ -289,6 +289,21 @@ body {
   animation: moveInFromBottom 0.5s ease-out 0.75;
   animation-delay: 1s;
   animation-fill-mode: backwards;
+}
+.btn-learn-more {
+  text-decoration: none;
+  font-size: 2.2rem;
+  display: inline-block;
+  transition: all 0.5s;
+  color: #45e960;
+  border-bottom: 0.1rem solid #45e960;
+}
+.btn-learn-more:hover {
+  transform: translateY(-0.5rem);
+  padding: 0.2rem;
+  color: white;
+  box-shadow: 0.5rem 0.5rem 0.9rem black;
+  background-color: rgba(69, 233, 96, 0.8);
 }
 
 .section-about {
