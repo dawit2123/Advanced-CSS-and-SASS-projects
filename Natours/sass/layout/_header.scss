@@ -1,3 +1,4 @@
+// header css codes
 .header {
   background-image: linear-gradient(
       to right bottom,
@@ -9,7 +10,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 95vh;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
   position: relative;
   &__logo-box {
     position: absolute;
@@ -19,13 +20,14 @@
   &__logo {
     height: 4rem;
   }
-  &-text {
+  &__text-box {
     color: $color-white;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: bold;
+    text-align: center;
   }
 
   &-text--main {
@@ -43,5 +45,6 @@
     letter-spacing: 2rem;
     animation-name: moveInFromRight;
     animation-duration: 2s;
+    margin-bottom: 8rem;
   }
 }
