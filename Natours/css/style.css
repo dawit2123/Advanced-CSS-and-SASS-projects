@@ -41,7 +41,15 @@ body {
   text-align: center;
 }
 
-.u-margin-buttom-8 {
+.u-margin-buttom-small {
+  margin-bottom: 1rem;
+}
+
+.u-margin-buttom-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-buttom-large {
   margin-bottom: 8rem;
 }
 
@@ -52,10 +60,22 @@ body {
   color: transparent;
   font-size: 3.5rem;
   font-weight: 700;
+  transition: all 2s;
 }
 .heading-secondary:hover {
   transform: skewX(20deg) skewY(2deg) scale(1.1);
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.paragraph {
+  color: rgb(99, 97, 97);
+  font-size: 1.4rem;
+}
+
+.heading-tertiary {
+  color: rgb(99, 97, 97);
+  font-size: 1.7rem;
+  text-transform: uppercase;
 }
 
 @keyframes moveInFromLeft {
@@ -93,6 +113,31 @@ body {
     transform: translate(0rem);
   }
 }
+.heading-secondary {
+  background-image: linear-gradient(to right, #45e960, #28b485);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 3.5rem;
+  font-weight: 700;
+  transition: all 2s;
+}
+.heading-secondary:hover {
+  transform: skewX(20deg) skewY(2deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.paragraph {
+  color: rgb(99, 97, 97);
+  font-size: 1.4rem;
+}
+
+.heading-tertiary {
+  color: rgb(99, 97, 97);
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+
 .header {
   background-image: linear-gradient(to right bottom, rgba(69, 233, 96, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
   background-position: top;
@@ -135,62 +180,6 @@ body {
   animation-name: moveInFromRight;
   animation-duration: 2s;
   margin-bottom: 8rem;
-}
-
-.btn {
-  /* doing the button animations */
-  /* button slide in from bottom animation */
-}
-.btn:link, .btn:visited {
-  text-decoration: none;
-  border-radius: 10rem;
-  text-transform: uppercase;
-  transition: all 0.7s;
-  position: relative;
-}
-.btn--white {
-  background-color: white;
-  color: grey;
-  padding: 1.5rem;
-}
-.btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-}
-.btn:active {
-  transform: translateY(-0.1rem);
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
-}
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 10rem;
-  z-index: -1;
-  transition: all 0.5s;
-}
-.btn--white::after {
-  background-color: white;
-  color: grey;
-}
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
-.btn--animated {
-  animation: moveInFromBottom 0.5s ease-out 0.75;
-  animation-delay: 1s;
-  animation-fill-mode: backwards;
-}
-
-.section-about {
-  padding: 22rem 0;
-  margin-top: -11rem;
-  background-color: #f7f7f7;
 }
 
 .row {
@@ -250,6 +239,85 @@ body {
 }
 .row .col-3-of-4 {
   width: calc(3 * (100% - 3 * 6rem) / 4 + 2 * 6rem);
+}
+
+.btn {
+  /* doing the button animations */
+  /* button slide in from bottom animation */
+}
+.btn:link, .btn:visited {
+  text-decoration: none;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  transition: all 0.7s;
+  position: relative;
+}
+.btn--white {
+  background-color: white;
+  color: grey;
+  padding: 1.5rem;
+}
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10rem;
+  z-index: -1;
+  transition: all 0.5s;
+}
+.btn--white::after {
+  background-color: white;
+  color: grey;
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.btn--animated {
+  animation: moveInFromBottom 0.5s ease-out 0.75;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+
+.section-about {
+  padding: 22rem 0;
+  margin-top: -11rem;
+  background-color: #f7f7f7;
+}
+
+.composition {
+  position: relative;
+}
+.composition__images {
+  width: 30rem;
+  border-radius: 1rem;
+}
+.composition__images-p1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.composition__images-p2 {
+  position: absolute;
+  top: 5rem;
+  left: 20rem;
+}
+.composition__images-p3 {
+  position: absolute;
+  top: 15rem;
+  left: 10rem;
 }
 
 /*# sourceMappingURL=style.css.map */

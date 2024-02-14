@@ -9,8 +9,18 @@
   color: transparent;
   font-size: 3.5rem;
   font-weight: 700;
+  transition: all 2s;
   &:hover {
     transform: skewX(20deg) skewY(2deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
   }
+}
+.paragraph {
+  color: $color-grey-black;
+  font-size: 1.4rem;
+}
+.heading-tertiary {
+  color: $color-grey-black;
+  font-size: 1.7rem;
+  text-transform: uppercase;
 }
