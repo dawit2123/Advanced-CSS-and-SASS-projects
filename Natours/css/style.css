@@ -329,6 +329,7 @@ body {
   transform: scale(1.1);
   transform: translateY(-1rem);
   outline: 1rem solid #45e960;
+  box-shadow: 0.5rem 0.5rem 1rem black;
 }
 .composition__images-p2:hover {
   position: absolute;
@@ -338,6 +339,7 @@ body {
   transform: scale(1.1);
   transform: translateY(-1rem);
   outline: 1rem solid #45e960;
+  box-shadow: 0.5rem 0.5rem 1rem black;
 }
 .composition__images-p3:hover {
   position: absolute;
@@ -347,6 +349,7 @@ body {
   transform: scale(1.1);
   transform: translateY(-1rem);
   outline: 1rem solid #45e960;
+  box-shadow: 0.5rem 0.5rem 1rem black;
 }
 .composition:hover .composition__images:not(:hover) {
   transform: scale(0.9);
