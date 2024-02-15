@@ -242,18 +242,17 @@ body {
 }
 
 .container-4 {
-  background-image: linear-gradient(to bottom right, rgba(69, 233, 96, 0.8), rgba(40, 180, 133, 0.8)), url("../../img/nat-4.jpg");
+  background-image: linear-gradient(to bottom right, rgba(69, 233, 96, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 70rem;
   color: black;
   display: flex;
   gap: 3rem;
   justify-content: center;
   align-items: center;
   clip-path: polygon(0 10%, 100% 0, 100% 84%, 0 100%);
-  margin-top: -10rem;
 }
 
 .composition {
