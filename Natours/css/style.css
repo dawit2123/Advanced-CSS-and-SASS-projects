@@ -384,6 +384,7 @@ body {
   width: 25rem;
   box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
+  transition: all 0.5s;
 }
 .feature-box-icon {
   font-size: 8rem;
