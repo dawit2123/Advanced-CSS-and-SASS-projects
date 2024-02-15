@@ -241,6 +241,79 @@ body {
   width: calc(3 * (100% - 3 * 6rem) / 4 + 2 * 6rem);
 }
 
+.container-4 {
+  background-image: linear-gradient(to bottom right, rgba(69, 233, 96, 0.8), rgba(40, 180, 133, 0.8)), url("../../img/nat-4.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  color: black;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(0 10%, 100% 0, 100% 84%, 0 100%);
+  margin-top: -10rem;
+}
+
+.composition {
+  position: relative;
+}
+.composition__images {
+  width: 30rem;
+  border-radius: 1rem;
+  outline-offset: 2rem;
+  transition: all 0.5s;
+}
+.composition__images-p1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.composition__images-p2 {
+  position: absolute;
+  top: 5rem;
+  left: 20rem;
+}
+.composition__images-p3 {
+  position: absolute;
+  top: 15rem;
+  left: 10rem;
+}
+.composition__images-p1:hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transform: scale(1.1);
+  transform: translateY(-1rem);
+  outline: 1rem solid #45e960;
+  box-shadow: 0.5rem 0.5rem 1rem black;
+}
+.composition__images-p2:hover {
+  position: absolute;
+  top: 5rem;
+  left: 20rem;
+  z-index: 10;
+  transform: scale(1.1);
+  transform: translateY(-1rem);
+  outline: 1rem solid #45e960;
+  box-shadow: 0.5rem 0.5rem 1rem black;
+}
+.composition__images-p3:hover {
+  position: absolute;
+  top: 15rem;
+  left: 10rem;
+  z-index: 10;
+  transform: scale(1.1);
+  transform: translateY(-1rem);
+  outline: 1rem solid #45e960;
+  box-shadow: 0.5rem 0.5rem 1rem black;
+}
+.composition:hover .composition__images:not(:hover) {
+  transform: scale(0.9);
+}
+
 .btn {
   /* doing the button animations */
   /* button slide in from bottom animation */
@@ -306,68 +379,28 @@ body {
   background-color: rgba(69, 233, 96, 0.8);
 }
 
+.feature-box {
+  padding: 3rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 25rem;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+}
+.feature-box-icon {
+  font-size: 8rem;
+  background-image: linear-gradient(to right, #45e960, rgba(0, 0, 0, 0.8));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.feature-box:hover {
+  transform: translateY(-1rem);
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+
 .section-about {
   padding: 22rem 0;
   margin-top: -11rem;
   background-color: #f7f7f7;
-}
-
-.composition {
-  position: relative;
-}
-.composition__images {
-  width: 30rem;
-  border-radius: 1rem;
-  outline-offset: 2rem;
-  transition: all 0.5s;
-}
-.composition__images-p1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.composition__images-p2 {
-  position: absolute;
-  top: 5rem;
-  left: 20rem;
-}
-.composition__images-p3 {
-  position: absolute;
-  top: 15rem;
-  left: 10rem;
-}
-.composition__images-p1:hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  transform: scale(1.1);
-  transform: translateY(-1rem);
-  outline: 1rem solid #45e960;
-  box-shadow: 0.5rem 0.5rem 1rem black;
-}
-.composition__images-p2:hover {
-  position: absolute;
-  top: 5rem;
-  left: 20rem;
-  z-index: 10;
-  transform: scale(1.1);
-  transform: translateY(-1rem);
-  outline: 1rem solid #45e960;
-  box-shadow: 0.5rem 0.5rem 1rem black;
-}
-.composition__images-p3:hover {
-  position: absolute;
-  top: 15rem;
-  left: 10rem;
-  z-index: 10;
-  transform: scale(1.1);
-  transform: translateY(-1rem);
-  outline: 1rem solid #45e960;
-  box-shadow: 0.5rem 0.5rem 1rem black;
-}
-.composition:hover .composition__images:not(:hover) {
-  transform: scale(0.9);
 }
 
 /*# sourceMappingURL=style.css.map */
