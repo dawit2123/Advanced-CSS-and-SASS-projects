@@ -261,7 +261,6 @@ body {
 .composition__images {
   width: 30rem;
   border-radius: 1rem;
-  outline-offset: 2rem;
   transition: all 0.5s;
 }
 .composition__images-p1 {
@@ -287,6 +286,7 @@ body {
   transform: scale(1.1);
   transform: translateY(-1rem);
   outline: 1rem solid #45e960;
+  outline-offset: 2rem;
   box-shadow: 0.5rem 0.5rem 1rem black;
 }
 .composition__images-p2:hover {
@@ -297,6 +297,7 @@ body {
   transform: scale(1.1);
   transform: translateY(-1rem);
   outline: 1rem solid #45e960;
+  outline-offset: 2rem;
   box-shadow: 0.5rem 0.5rem 1rem black;
 }
 .composition__images-p3:hover {
@@ -307,6 +308,7 @@ body {
   transform: scale(1.1);
   transform: translateY(-1rem);
   outline: 1rem solid #45e960;
+  outline-offset: 2rem;
   box-shadow: 0.5rem 0.5rem 1rem black;
 }
 .composition:hover .composition__images:not(:hover) {
@@ -382,6 +384,7 @@ body {
   padding: 3rem;
   background-color: rgba(255, 255, 255, 0.8);
   width: 25rem;
+  height: 30rem;
   box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
   transition: all 0.5s;

@@ -58,5 +58,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   transform: scale(1.1);
   transform: translateY(-1rem);
   outline: 1rem solid $color-primary-light;
+  outline-offset: 2rem;
   box-shadow: 0.5rem 0.5rem 1rem $color-black;
 }
