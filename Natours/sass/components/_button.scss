@@ -12,6 +12,11 @@
     color: $color-grey;
     padding: 1.5rem;
   }
+  &--green {
+    background-color: $color-primary-dark;
+    color: $color-white;
+    padding: 1.5rem;
+  }
   &:hover {
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
