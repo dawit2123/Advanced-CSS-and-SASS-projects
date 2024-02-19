@@ -361,6 +361,16 @@ body {
   background-color: white;
   color: grey;
 }
+.btn--white::after::after {
+  background-color: #7ed56f;
+}
+.btn--green::after {
+  background-color: #28b485;
+  color: white;
+}
+.btn--green::after::after {
+  background-color: #7ed56f;
+}
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
