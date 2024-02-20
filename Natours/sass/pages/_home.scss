@@ -12,3 +12,14 @@
   margin-top: -11rem;
   background-color: $color-grey-light-1;
 }
+.section-tours {
+  margin-bottom: 5rem;
+}
+.section-stories {
+  position: relative;
+  padding: 15rem 0;
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+}
