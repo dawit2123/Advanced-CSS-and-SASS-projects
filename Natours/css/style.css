@@ -407,7 +407,9 @@ body {
 }
 .feature-box-icon {
   font-size: 8rem;
-  background-image: linear-gradient(to right, #45e960, rgba(0, 0, 0, 0.8));
+  margin-top: 100rem;
+  padding-top: 1rem;
+  background-image: linear-gradient(to right, #45e960, #28b485);
   -webkit-background-clip: text;
   color: transparent;
 }
