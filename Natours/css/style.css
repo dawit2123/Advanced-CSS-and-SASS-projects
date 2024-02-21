@@ -27,6 +27,26 @@ ORDER: Base + typography > general layout + grid > page layout > components
 html {
   font-size: 62.5%;
 }
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 70%;
+  }
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 45%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 40%;
+  }
+}
 
 body {
   padding: 2rem;
