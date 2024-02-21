@@ -52,6 +52,11 @@ body {
   font-weight: 400;
   line-height: 1.7;
 }
+@media only screen and (max-width: 75em) {
+  body {
+    padding: 0rem;
+  }
+}
 
 .u-center-text {
   text-align: center !important;
@@ -183,6 +188,12 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
   --webkit-clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
   position: relative;
+}
+@media only screen and (max-width: 37.5em) {
+  .header {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
 }
 .header__logo-box {
   position: absolute;
