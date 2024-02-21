@@ -26,25 +26,21 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 html {
   font-size: 62.5%;
-}
-@media only screen and (min-width: 112.5em) {
-  html {
-    font-size: 70%;
-  }
+  font-size: 62.5%;
 }
 @media only screen and (max-width: 75em) {
   html {
-    font-size: 50%;
+    font-size: 56.25%;
   }
 }
 @media only screen and (max-width: 56.25em) {
   html {
-    font-size: 45%;
+    font-size: 50%;
   }
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (min-width: 112.5em) {
   html {
-    font-size: 40%;
+    font-size: 75%;
   }
 }
 
@@ -81,6 +77,16 @@ body {
   font-size: 3.5rem;
   font-weight: 700;
   transition: all 1s;
+}
+@media only screen and (max-width: 56.25em) {
+  .heading-secondary {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
 }
 .heading-secondary:hover {
   transform: skewX(20deg) skewY(2deg) scale(1.1);
@@ -142,6 +148,16 @@ body {
   font-weight: 700;
   transition: all 1s;
 }
+@media only screen and (max-width: 56.25em) {
+  .heading-secondary {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
+}
 .heading-secondary:hover {
   transform: skewX(20deg) skewY(2deg) scale(1.1);
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -193,6 +209,12 @@ body {
   animation-name: moveInFromLeft;
   animation-duration: 2s;
 }
+@media only screen and (max-width: 37.5em) {
+  .header-text--main {
+    letter-spacing: 1rem;
+    font-family: 5rem;
+  }
+}
 .header-text--sub {
   text-transform: uppercase;
   display: block;
@@ -201,6 +223,11 @@ body {
   animation-name: moveInFromRight;
   animation-duration: 2s;
   margin-bottom: 8rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .header-text--sub {
+    letter-spacing: 0.5rem;
+  }
 }
 
 .row {

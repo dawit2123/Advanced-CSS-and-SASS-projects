@@ -38,6 +38,10 @@
     font-size: 6rem;
     animation-name: moveInFromLeft;
     animation-duration: 2s;
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-family: 5rem;
+    }
   }
   &-text--sub {
     text-transform: uppercase;
@@ -47,5 +51,8 @@
     animation-name: moveInFromRight;
     animation-duration: 2s;
     margin-bottom: 8rem;
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+    }
   }
 }
